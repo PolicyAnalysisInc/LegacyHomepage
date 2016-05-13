@@ -7,7 +7,7 @@ $("#carousel").slick({
   slidesToScroll: 1
 });
 
-var costPlot = new r2d3.plot("costplot",{top:10,left:10,right:10,bottom:10});
+var costPlot = new r2d3.plot(getelementbyid("costplot"),{top:10,left:10,right:10,bottom:10});
 d3.json("data/costBar.json", function(error, json){
   console.log(json);
   costPlot.update(json);
