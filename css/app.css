@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+.menu-text{
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 30px !important;
+}
+body{
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  background-color: white !important;
+}
+.callout{
+  background-color: white !important;
+  margin: 5px;
+  padding: 0;
+}
+.Container
+{
+    text-align: center;
+}
+
+    .Container:before
+    {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.Content
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown.menu{
+  background-color: #eeeeee !important;
+}
+.title-bar{
+  background-color: #eeeeee !important;
+}
+.top-bar{
+  background-color: #eeeeee !important;
+}
+#carousel{
+  width: 100%;
+}
+#rlogo{
+  height: 200px;
+}
+.righttitle{
+  background-color: #eeeeee !important;
+  float: right;
+}
+.slick-slide {
+   height:400px;
+}
+
+.slick-slide img {
+   height:400px;
+}
+.content{
+  color: white;
+}
+.content > img{
+  margin: auto; 
+}
+.top-bar-section .has-dropdown > a:after {
+    border: inset 5px;
+    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+    border-top-style: solid;
+    margin-top: -2.5px;
+}
+.centercolumn{
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: #555555;
+}
+.pageitem{
+  text-align: center;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.slick-track {
+  margin: 0 auto;
+}
+#chart1{
+}
+.bar {
+  fill: steelblue;
+}
+.c3-gauge-value{
+  font-size: 20px !important;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.x.axis path {
+  display: none;
+}
