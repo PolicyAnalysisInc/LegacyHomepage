@@ -7,35 +7,35 @@ $("#carousel").slick({
   slidesToScroll: 1
 });
 
-var chart = c3.generate({
+
+var chart1 = c3.generate({
     bindto: '#chart1',
     data: {
         columns: [
-            ['data', 50000]
+            ['data1', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000],
+            ['data2', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000],
+            ['data3', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000]
         ],
-        type: 'gauge'
+        order: null,
+        type: 'bar',
+        groups: [
+            ['data1', 'data2', 'data3']
+        ]
     },
-    tooltip: {
-        show: false
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
     },
-    gauge: {
-        label: {
-            format: function(value, ratio) {
-                return d3.format("$0,000.0f")(value) + " / QALY";
-            },
-            show: false // to turn off the min/max labels.
+    axis: {
+        x: {
+          type: "category",
+          categories: ["2016","2017","2018","2019","2020"]
         },
-    min: 0, // 0 is default, //can handle negative min e.g. vacuum / voltage / current flow / rate of change
-    max: 300000, // 100 is default
-    units: '$',
-//    width: 39 // for adjusting arc thickness
-    },
-    color: {
-        pattern: ['#00FF49', '#FFC400', '#FF002F'], // the three color levels for the percentage values.
-        threshold: {
-//            unit: 'value', // percentage is default
-//            max: 200, // 100 is default
-            values: [100000, 150000, 200000]
+        y: {
+          show: false
         }
     },
     transition: {
@@ -44,11 +44,22 @@ var chart = c3.generate({
     size: {
         height: 200,
         width: 300
+    },
+    tooltip: {
+        show: false
+    },
+    legend: {
+      show: false
     }
 });
 
+
 setInterval(function () {
-    chart.load({
-        columns: [['data', Math.round(50000 + Math.random() * 180000,0)]]
+    chart1.load({
+        columns: [
+            ['data1', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000],
+            ['data2', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000],
+            ['data3', 10000 + Math.random() * 40000, 10000 + Math.random() * 50000, 10000 + Math.random() * 60000, 10000 + Math.random() * 70000, 10000 + Math.random() * 80000]
+        ],
     });
 }, 5000);
