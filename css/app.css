@@ -15,8 +15,10 @@
     height: auto;
   }
   .textColumn {
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
+    max-width: 800px;
     font-size: 13px;
   }
 }
@@ -81,12 +83,9 @@ body p{
   color: #ffffff;
   background-color: #555555;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
-.slick-dots li.slick-active{
-  color: #ffffff !important;
-}
 .slick-slide {
   height: auto !important;
 }
@@ -118,6 +117,9 @@ body p{
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   fill: #ffffff !important;
 }
+.top-bar .toggle-topbar.menu-icon a {
+    background-color: #666666;
+}  
 
 .bar {
   fill: steelblue;
