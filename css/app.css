@@ -3,9 +3,7 @@
 @media (max-width: 400px) {
   .sliderImage {
     width: 100%;
-    height: auto;position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height: auto;
   }
 }
 @media (min-width: 401px) {
@@ -55,7 +53,12 @@ body{
   background-color: #eeeeee !important;
 }
 #carousel{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 100%;
+  max-width: 1000px;
 }
 .righttitle{
   background-color: #eeeeee !important;
@@ -84,6 +87,7 @@ body{
   margin: 0;
   padding: 30px;
   background-color: #555555;
+  style="text-align: center";
 }
 .pageitem{
   text-align: center;
@@ -92,4 +96,10 @@ body{
 }
 .slick-track {
   margin: 0 auto;
+}
+
+.c3-gauge-value{
+  font-size: 20px !important;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  fill: #ffffff !important;
 }
