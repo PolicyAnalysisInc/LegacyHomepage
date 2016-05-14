@@ -42,19 +42,16 @@ body{
 #carousel{
   width: 100%;
 }
-#rlogo{
-  height: 200px;
-}
 .righttitle{
   background-color: #eeeeee !important;
   float: right;
 }
 .slick-slide {
-   height:311px;
+   height:411px;
 }
 
 .slick-slide img {
-   height:311px;
+   height:411px;
 }
 .content{
   color: white;
