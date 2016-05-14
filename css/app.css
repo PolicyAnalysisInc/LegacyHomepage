@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
-@media (max-width: 400px) {
+@media (max-width: 481px) {
   .sliderImage {
   display: block;
   width: 250px !important;
   height: 131px !important;
   }
 }
-@media (min-width: 401px) {
+@media (min-width: 482px) {
   .sliderImage {
     height: auto;
     width: auto;
