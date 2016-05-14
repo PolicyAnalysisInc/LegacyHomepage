@@ -1,17 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
-@media (max-width: 481px) {
-  .sliderImage {
-  display: block;
-  width: 250px !important;
-  height: 131px !important;
-  }
-}
-@media (min-width: 482px) {
-  .sliderImage {
-    height: auto;
-    width: auto;
-  }
+.sliderImage {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .menu-text{
@@ -62,10 +53,6 @@ body{
   float: right;
 }
 .slick-slide {
-   height:411px;
-}
-
-.slick-slide img {
    height:411px;
 }
 .content{
