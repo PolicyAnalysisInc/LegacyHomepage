@@ -20,58 +20,72 @@
     font-size: 13px;
   }
 }
-.menu-text{
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-size: 30px !important;
+.top-bar{
+  background-color: #eeeeee !important;
 }
+.name{
+  padding-left: 10px;
+  background-color: #eeeeee !important;
+  font-size: 26px !important;
+  padding-right: 20px;
+}
+
+
+.top-bar-section {
+  background: #eeeeee !important;
+  background-color: #eeeeee !important;
+  color: #0078a0;
+}
+.top-bar-section ul {
+  background: #eeeeee !important;
+  background-color: #eeeeee !important;
+  color: #0078a0;
+}
+
+
+.top-bar-section ul li a{
+  background: #eeeeee !important;
+  background-color: #eeeeee !important;
+  color: #0078a0;
+}
+.top-bar-section ul li a:hover{
+  background: #0078a0 !important;
+  background-color: #0078a0 !important;
+  color: #ffffff;
+}
+.top-bar-section ul li {
+  background: #eeeeee !important;
+  background-color: #eeeeee !important;
+  color: #0078a0;
+}
+
 body{
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   background-color: white !important;
 }
-.callout{
-  background-color: white !important;
-  margin: 5px;
-  padding: 0;
+body p{
+  font-size: 14px;
 }
-.Container
-{
-    text-align: center;
-}
-
-    .Container:before
-    {
-        content: '';
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-    }
 
 .Content
 {
     display: inline-block;
     vertical-align: middle;
+  color: #ffffff;
 }
-.dropdown.menu{
-  background-color: #eeeeee !important;
-}
-.title-bar{
-  background-color: #eeeeee !important;
-}
-.top-bar{
-  background-color: #eeeeee !important;
-}
+
 #carousel{
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  color: #ffffff;
   background-color: #555555;
   width: 100%;
   max-width: 800px;
 }
-.righttitle{
-  background-color: #eeeeee !important;
-  float: right;
+
+.slick-dots li.slick-active{
+  color: #ffffff !important;
 }
 .slick-slide {
   height: auto !important;
@@ -82,14 +96,11 @@ body{
 .content p{
   font-size: 13px !important;
 }
+.content h2{
+  color: white;
+}
 .content > img{
   margin: auto; 
-}
-.top-bar-section .has-dropdown > a:after {
-    border: inset 5px;
-    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
-    border-top-style: solid;
-    margin-top: -2.5px;
 }
 .centercolumn{
   width: 100%;
@@ -97,11 +108,6 @@ body{
   padding: 30px;
   background-color: #555555;
   style="text-align: center";
-}
-.pageitem{
-  text-align: center;
-  height: 350px;
-  margin-bottom: 20px;
 }
 .slick-track {
   margin: 0 auto;
