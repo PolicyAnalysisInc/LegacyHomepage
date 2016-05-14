@@ -60,6 +60,7 @@ body{
   float: right;
 }
 .slick-slide {
+  height: auto !important;
 }
 .content{
   color: white;
