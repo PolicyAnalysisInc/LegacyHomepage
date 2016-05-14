@@ -2,9 +2,9 @@
 
 @media (max-width: 400px) {
   .sliderImage {
-    display: block;
-    width: 250px;
-    height: auto;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
   }
 }
 @media (min-width: 401px) {
