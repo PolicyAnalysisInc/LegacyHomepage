@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>heRo</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
@@ -13,18 +13,33 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.css"/>
   </head>
   <body>
-    <div class="top-bar">
+  
+    <nav class="top-bar">
       <div class="top-bar-title">
         <ul class="dropdown menu" data-dropdown-menu>
           <li class="menu-text"><font color='c0504d'>h</font><font color='9bba58'>ē</font><font color='4bacc6'>R</font><font color='8064a1'>o</font></li>
+          
         </ul>
       </div>
+        <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="center">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="http://www.google.com">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+    </section>
       <div class="top-bar-title righttitle">
         <ul class="dropdown menu" data-dropdown-menu>
           <li class="menu-text"><img height="30px" width="52px" src="img/pai.png"/></li>
         </ul>
       </div>
-    </div>
+    </nav>
     <div class="centercolumn">
       <div id="carousel" class="single-item" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
         <div>
@@ -108,12 +123,18 @@
           </div>
         </div>
     <br>
-    <div class="row small-up-1 large-up-3">
+    <div class="textColumn">
+      <p>heRo is PAI's web-based platform for deploying interactive HEOR applications.  Whether you need to find the value-based price of your new treatment, run a network meta-anlaysis to assess the competitive landscape, or simply perform exploratory data analysis, we can build an application to meet your needs and your budget.</p>
+      
+      <p>PAI (Policy Analysis Inc.) is a 40-year old health-economics consultancy located in Brookline, Massachusetts. We are an industry leader in the fields of pharmacoeconomics, outcomes research, quality-of-life assessment, pharmacoepidemiology, and health technology assessment.</p>
+
+<p>Our consultants have advanced training in a variety of fields, including health economics, medicine, management science, epidemiology, biostatistics, health-services research, and survey design, and have authored more than 250 articles in major peer-reviewed journals.</p>
+
       <p>If you'd like to see a model running on heRo, we've put one there for you to try.  heRo {Oncology} is a flexible CEA model designed to perform evaluations of development candidates based on the content of your TPP.  If you'd like to gain access to a time-limited trial, please register for access using our <a href="http://www.hero-oncology.com/">secure web-form</a>.</p>
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>

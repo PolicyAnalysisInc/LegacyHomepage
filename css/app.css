@@ -5,11 +5,19 @@
     width: 100%;
     height: auto;
   }
+  .textColumn {
+    width: 100%;
+  }
 }
 @media (min-width: 401px) {
   .sliderImage {
     width: 100%;
     height: auto;
+  }
+  .textColumn {
+    margin-left: 20%;
+    width: 60%;
+    font-size: 13px;
   }
 }
 .menu-text{
