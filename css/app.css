@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
-.sliderImage {
-  width: 320px !important;
-  height: auto !important;
+@media (max-width: 400px) {
+  .sliderImage {
+    width: 320px;
+    height: auto;
+  }
 }
-
+@media (min-width: 401px) {
+  .sliderImage {
+    width: 100%;
+    height: auto;
+  }
+}
 .menu-text{
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 30px !important;
