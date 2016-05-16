@@ -24,6 +24,9 @@
     font-size: 13px;
   }
 }
+h2{
+  font-weight: bold;
+}
 .top-bar{
   background-color: #eeeeee !important;
 }
