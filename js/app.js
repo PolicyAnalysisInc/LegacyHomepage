@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).foundation();
 $("#carousel").slick({
   dots: true,
