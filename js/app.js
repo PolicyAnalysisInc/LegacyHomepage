@@ -44,8 +44,8 @@ var chart1 = c3.generate({
         duration: 800
     },
     size: {
-        height: 200,
-        width: 300
+        height: 250,
+        width: 250
     },
     tooltip: {
         show: false

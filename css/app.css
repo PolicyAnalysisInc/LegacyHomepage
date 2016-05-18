@@ -4,21 +4,25 @@
   .sliderImage {
     width: 100%;
     height: auto;
+    max-height: 250px;
   }
   .textColumn {
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (min-width: 401px) {
   .sliderImage {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 250px;
   }
   .textColumn {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
     max-width: 800px;
     font-size: 13px;
@@ -119,6 +123,13 @@ body p{
   margin: 0 auto;
 }
 
+#chart1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
 .c3-gauge-value{
   font-size: 20px !important;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -130,13 +141,4 @@ body p{
 
 .bar {
   fill: steelblue;
-}
-.c3-axis {
-  fill: #ffffff;
-}
-.c3-axis line{
-  stroke: #ffffff !important;
-}
-.c3-axis path{
-  stroke: #ffffff !important;
 }
